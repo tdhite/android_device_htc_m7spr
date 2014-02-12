@@ -1,0 +1,13 @@
+# TWRP fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+#<mnt_point> <type> <src>                  <twrp_flags>
+/boot        emmc   /dev/block/mmcblk0p35
+/recovery    emmc   /dev/block/mmcblk0p36
+/system      ext4   /dev/block/mmcblk0p37
+/cache       ext4   /dev/block/mmcblk0p38
+/data        ext4   /dev/block/mmcblk0p39
+
+# USB storage
+/usb-otg    vfat    /dev/block/sda1 /dev/block/sda  flags=display="USB-OTG";storage;removable;wipeingui

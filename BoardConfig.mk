@@ -71,3 +71,6 @@ BOARD_PROVIDES_LIBRIL := true
 
 # inherit from the proprietary version
 -include vendor/htc/m7spr/BoardConfigVendor.mk
+
+# inherit TWRP settings
+-include device/htc/m7spr/twrp/m7spr-twrp.mk
