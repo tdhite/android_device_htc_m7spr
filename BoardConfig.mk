@@ -70,7 +70,7 @@ BOARD_PROVIDES_LIBRIL := true
 # mmcblk0p31: 04729a00 00000200 "reserve"
 
 # inherit from the proprietary version
--include vendor/htc/m7spr/BoardConfigVendor.mk
+-include vendor/htc/m7wls/BoardConfigVendor.mk
 
 # inherit TWRP settings
--include device/htc/m7spr/twrp/m7spr-twrp.mk
+-include device/htc/m7wls/twrp/m7wls-twrp.mk

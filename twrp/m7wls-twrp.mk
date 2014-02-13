@@ -1,6 +1,6 @@
 #TWRP Settings for CWM 11 Based Build
 PRODUCT_COPY_FILES += \
-	device/htc/m7spr/twrp/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+	device/htc/m7wls/twrp/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Custom recovery
 #TARGET_PREBUILT_KERNEL := device/htc/m7/kernel
