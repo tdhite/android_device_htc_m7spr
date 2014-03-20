@@ -25,4 +25,5 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 HAVE_SELINUX := true
 TW_CHARGING_LED_PATH := "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-led/leds/amber/brightness"
 TW_CHARGED_LED_PATH := "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-led/leds/green/brightness"
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 #TWRP_EVENT_LOGGING := true
