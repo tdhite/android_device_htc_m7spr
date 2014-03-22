@@ -2,7 +2,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
-$(call inherit-product, device/htc/m7spr/full_m7wls.mk)
+$(call inherit-product, device/htc/m7wls/full_m7wls.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=m7wls \
