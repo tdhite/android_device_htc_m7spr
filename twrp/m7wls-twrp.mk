@@ -2,6 +2,9 @@
 PRODUCT_COPY_FILES += \
 	device/htc/m7wls/twrp/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
+# Common global flags
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+
 # Custom recovery
 #TARGET_PREBUILT_KERNEL := device/htc/m7/kernel
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
