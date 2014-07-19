@@ -30,3 +30,4 @@ TW_CHARGING_LED_PATH := "/sys/class/leds/amber/brightness"
 TW_CHARGED_LED_PATH := "/sys/class/leds/green/brightness"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 #TWRP_EVENT_LOGGING := true
+BOARD_RECOVERY_BLDRMSG_OFFSET := 2048
