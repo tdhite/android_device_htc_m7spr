@@ -5,11 +5,14 @@ PRODUCT_COPY_FILES += \
 # Common global flags
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
+# Power
+TARGET_POWERHAL_VARIANT := cm
+
 # Custom recovery
 #TARGET_PREBUILT_KERNEL := device/htc/m7/kernel
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
-TARGET_RECOVERY_INITRC := bootable/recovery/etc/init.rc
+TARGET_RECOVERY_INITRC := bootable/recovery-twrp/etc/init.rc
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -26,8 +29,11 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "usb-otg"
 TW_NO_USB_STORAGE := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 HAVE_SELINUX := true
-TW_CHARGING_LED_PATH := "/sys/class/leds/amber/brightness"
-TW_CHARGED_LED_PATH := "/sys/class/leds/green/brightness"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_FLASH_FROM_STORAGE := true
+TW_INCLUDE_JB_CRYPTO := true
 #TWRP_EVENT_LOGGING := true
 BOARD_RECOVERY_BLDRMSG_OFFSET := 2048
+
+RECOVERY_VARIANT := twrp
+
